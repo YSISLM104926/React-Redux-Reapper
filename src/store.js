@@ -1,3 +1,9 @@
-import {createStore} from 'redux'
-import { counterReducer } from './Services/Reducer/ActionReducer'
-export const store = createStore(counterReducer);
+import { createStore, applyMiddleware } from 'redux';
+import {thunk} from 'redux-thunk';
+import { todosReducer } from "./redux/Reducer/ActionReducer";
+const store = createStore(
+    todosReducer,
+    applyMiddleware(thunk)
+  );
+
+export default store

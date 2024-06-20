@@ -1,6 +1,6 @@
 
 import './App.css'
-import Counter from './Components/Counter'
+import Todos from './Components/Todos'
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <h1 className="text-3xl font-bold ">
           Hello world!
         </h1>
-        <Counter />
+        <Todos />
       </div>
     </div>
   )
